@@ -356,7 +356,7 @@ def fetch_ecb_yields() -> dict:
     results = {c: {} for c in ECB_COUNTRIES}
     # ECB SDW yield curve dataset: YC (yield curves)
     # Series key: YC.B.U2.EUR.4F.G_N_{country}.SV_C_YM.SR_{tenor}Y
-    base = "https://sdw-wsrest.ecb.europa.eu/service/data"
+    base = "https://data-api.ecb.europa.eu/service/data"
     # Map country codes to ECB codes
     ecb_codes = {"DE": "DE", "FR": "FR", "IT": "IT", "ES": "ES", "GB": "GB"}
     for country, ecb_cc in ecb_codes.items():
